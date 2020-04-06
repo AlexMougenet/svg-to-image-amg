@@ -103,7 +103,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/svg-to-image-amg/dev/1586177032120-2020-04-06T12:43:52.120Z/svg-to-image-amg.zip"
+          "S3Key": "serverless/svg-to-image-amg/dev/1586179691789-2020-04-06T13:28:11.789Z/svg-to-image-amg.zip"
         },
         "FunctionName": "svg-to-image-amg-dev-svg-to-image-amg",
         "Handler": "handler.render",
@@ -122,14 +122,14 @@
         "IamRoleLambdaExecution"
       ]
     },
-    "SvgDashtoDashimageDashamgLambdaVersion9s6ggnQ0nQgkl1vMMBfWejGpHfdXRMR5MUVU4JusbE": {
+    "SvgDashtoDashimageDashamgLambdaVersionK0DQ5RNf8sRJqcwl6sYDhUYNigRitDuua5ufTzKMsM": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "SvgDashtoDashimageDashamgLambdaFunction"
         },
-        "CodeSha256": "sN+PdWRZnO5ajXRxPl6HveAy/96E5oxPt2wQkYCIyr4="
+        "CodeSha256": "/9TNydo97I6UJk1sPZ7delLr5nHlvpmcONk6Hzw9i7Y="
       }
     },
     "ApiGatewayRestApi": {
@@ -189,7 +189,7 @@
         "MethodResponses": []
       }
     },
-    "ApiGatewayDeployment1586177023103": {
+    "ApiGatewayDeployment1586179682256": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -258,7 +258,7 @@
     "SvgDashtoDashimageDashamgLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "SvgDashtoDashimageDashamgLambdaVersion9s6ggnQ0nQgkl1vMMBfWejGpHfdXRMR5MUVU4JusbE"
+        "Ref": "SvgDashtoDashimageDashamgLambdaVersionK0DQ5RNf8sRJqcwl6sYDhUYNigRitDuua5ufTzKMsM"
       }
     },
     "ServiceEndpoint": {
