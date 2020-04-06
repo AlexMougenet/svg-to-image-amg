@@ -1,0 +1,23 @@
+service: svg-to-image-amg
+provider:
+  name: aws
+  profile: default
+  runtime: nodejs12.x
+
+plugins:
+  - serverless-offline
+  - serverless-plugin-chrome
+  
+package:
+  exclude:
+    - node_modules/puppeteer/.local-chromium/**
+
+functions:
+  svg-to-image-amg:
+    handler: handler.render
+    memorySize: 1536MB
+    timeout: 30
+    events:
+      - http:
+          path: /
+          method: get
