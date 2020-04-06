@@ -1,4 +1,4 @@
-service: svg-to-image-amg
+service: zal
 provider:
   name: aws
   profile: default
@@ -7,17 +7,17 @@ provider:
 plugins:
   - serverless-offline
   - serverless-plugin-chrome
-  
+
 package:
   exclude:
     - node_modules/puppeteer/.local-chromium/**
 
 functions:
-  svg-to-image-amg:
+  svg-to-image:
     handler: handler.render
     memorySize: 1536MB
     timeout: 30
     events:
       - http:
           path: /
-          method: get
+          method: post

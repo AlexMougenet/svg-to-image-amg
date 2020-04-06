@@ -2,7 +2,7 @@
   "name": "svg-to-image-amg",
   "version": "1.0.0",
   "description": "",
-  "main": "chrome-script.js",
+  "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +10,11 @@
   "license": "ISC",
   "dependencies": {
     "@serverless-chrome/lambda": "^1.0.0-55",
+    "chrome-aws-lambda": "^2.1.1",
     "chrome-launcher": "^0.12.0",
-    "fs": "0.0.1-security",
-    "puppeteer": "^2.1.1",
     "serverless-offline": "^5.12.1",
     "serverless-plugin-chrome": "^1.0.0-55.3",
     "superagent": "^5.2.2",
-    "svgexport": "^0.4.0",
     "util": "^0.12.2"
   }
 }
