@@ -4,14 +4,6 @@ provider:
   profile: default
   runtime: nodejs12.x
 
-plugins:
-  - serverless-offline
-  - serverless-plugin-chrome
-
-package:
-  exclude:
-    - node_modules/puppeteer/.local-chromium/**
-
 functions:
   svg-to-image:
     handler: handler.render

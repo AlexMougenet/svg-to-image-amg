@@ -19,7 +19,7 @@ module.exports = async (content, opt) => {
     await page.setDefaultNavigationTimeout(Number(process.env.SVGEXPORT_TIMEOUT) * 1000);
   }
   await page.setContent(content);
-  var input = await page.evaluate(function () {
+  var input = await page.evaluate(() => {
 
     var el = document.documentElement;
     var widthAttr = el.getAttribute('width');
@@ -55,7 +55,7 @@ module.exports = async (content, opt) => {
     }
   });
 
-  await page.evaluate(function (input, opt) {
+  await page.evaluate((input, opt) => {
     const scale = opt.width / input.width;
     var svg = document.getElementsByTagName('svg')[0];
     if (!input.viewbox && !svg.getAttribute('viewBox')) {
